@@ -1,0 +1,116 @@
+
+.justify-content-center {
+    justify-content: center !important;}
+
+.padding1{
+ padding: 2%;   
+}
+.margin1{
+    margin:4%;
+}
+.background1{
+    background-color: rgba(226, 226, 226, 0.705) ;
+}
+.carousel-item{
+    width: 140% !important;
+    align-items: center;
+}
+
+.card:hover {
+
+    box-shadow: 0px 0 7px 2px rgba(128, 128, 128, 0.5);
+    
+}
+.background-grad-footer{
+
+    background:linear-gradient(to top, rgb(66, 66, 66), rgb(192, 192, 192));
+}
+.background-grad-header{
+
+    background:linear-gradient(to bottom, rgb(66, 66, 66), rgb(192, 192, 192));
+}
+
+
+.carousel-item img{
+    
+    max-height: 110vh;
+    max-width: 240vh;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+
+
+}
+.carousel-text{
+    color: rgb(248, 198, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.navbar-brand img{
+    max-width:200px ;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(248, 198, 0) !important;
+}
+.navbar-nav .nav-link{
+    color: rgb(253,221,94) !important; 
+}
+.navbar-nav .nav-link:hover{
+    color: rgb(255, 210, 31) !important; 
+}
+
+/* Set the border color */
+         
+.custom-toggler.navbar-toggler {
+    border-color: rgb(253,221,94);
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+ 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 221, 94, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bi{
+  fill: rgb(253,221,94);
+}
+.borrar {
+  fill: rgb(255, 0, 13);     
+}
+.actualizar{
+  fill: rgb(0, 26, 255);   
+}
+.enlace:hover{
+    box-shadow: 0px 0 7px 2px rgba(128, 128, 128, 0.5);
+}
+
+#oferta:hover{
+    box-shadow: 0px 0 7px 2px rgba(128, 128, 128, 0.5);
+}
+
+
+.center{
+    text-align: center !important;
+}
+.padding2{
+
+    padding: 0.5em 2.5em 0.5em;
+}
+
+.img1{
+    width: 85% !important;
+}
+.fondo1{
+    background-color: rgba(226, 226, 226, 0.705) !important;
+}
+.oferta{
+    background-color: rgba(226, 226, 226, 0.705) !important;
+}
+.marinf{
+    margin-bottom: 2%;
+
+}
