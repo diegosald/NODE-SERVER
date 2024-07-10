@@ -65,7 +65,7 @@ cajaOferta.addEventListener("mouseout", function () {
 // CARGO CARDS
 const cardCont = document.getElementById("card-cont")
 
-fetch("http://127.0.0.1:8080/motos")
+fetch("motos/")
     .then(response => response.json())
     .then(data => {
         console.log(data)
@@ -136,7 +136,7 @@ const enviarForm = async () => {
        
     }
 
-    const respuesta = await fetch("http://127.0.0.1:8080/form", {
+    const respuesta = await fetch("form/", {
         method: "POST",
         headers: {
            "Content-Type": "application/json",

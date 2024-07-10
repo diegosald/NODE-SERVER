@@ -1,7 +1,7 @@
 const tablita = document.getElementById('t-body')
 
 async function cargar2() {
-   const resp = await fetch('http://127.0.0.1:8080/form')
+   const resp = await fetch('../form/')
    const data = await resp.json()
    //console.log(data.body)
    return data.body
@@ -11,7 +11,7 @@ const prueba2 = cargar2()
 console.log(prueba2)
 
 function cargar() {
-   fetch('http://127.0.0.1:8080/form')
+   fetch('../form/')
       .then(response => response.json())
       .then(data => {
          tablita.innerHTML = ""
@@ -41,7 +41,7 @@ function cargar() {
             // alert(b.id)
             b.addEventListener('click', (e) => {
                e.preventDefault()
-               const direcion = 'http://127.0.0.1:8080/form/BORRAR/' + b.id
+               const direcion = '../form/BORRAR/' + b.id
                fetch(direcion, {
                   method: 'DELETE',
                })
@@ -63,7 +63,7 @@ function cargar() {
             // alert(b.id)
             b.addEventListener('click', (e) => {
                e.preventDefault()
-               const direcion = 'http://127.0.0.1:8080/form/leido/' + b.id
+               const direcion = '../form/leido/' + b.id
                fetch(direcion, {
                   method: 'put',
                })

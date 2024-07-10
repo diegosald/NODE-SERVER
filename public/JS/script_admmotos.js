@@ -4,7 +4,7 @@ const precio = document.getElementById('precio')
 const foto = document.getElementById('foto')
 
 const verTodo = async function () {
-    const result = await fetch("http://127.0.0.1:8080/motos")
+    const result = await fetch("../motos/")
     const data = await result.json()
     console.log(result.status)
     const tablita = document.getElementById('t-body')
@@ -35,7 +35,7 @@ const verTodo = async function () {
         b.onclick = (e) => {
             e.preventDefault()
             e.stopPropagation()
-            const direcion = 'http://127.0.0.1:8080/motos/BORRAR/' + b.id
+            const direcion = '../motos/BORRAR/' + b.id
             fetch(direcion, {
                 method: 'DELETE',
             })
@@ -57,7 +57,7 @@ const verTodo = async function () {
         b.addEventListener('click', (e) => {
             e.preventDefault()
             e.stopPropagation()
-            const direcion = 'http://127.0.0.1:8080/motos/' + b.id
+            const direcion = '../motos/' + b.id
             fetch(direcion, {
                 method: 'GET',
             })
@@ -133,7 +133,7 @@ async function cargarMoto() {
     datos_form.append("precio", precio.value)
     datos_form.append("uploaded_file", foto.files[0])
 
-    const resp = await fetch('http://127.0.0.1:8080/motos', {
+    const resp = await fetch('../motos/', {
         method: "POST",
         body: datos_form,
     })
@@ -172,7 +172,7 @@ async function updateMoto(id_moto, foto_ant) {
     datos_form.append("fotoant", foto_ant)
     datos_form.append("uploaded_file", foto.files[0])
 
-    const resp = await fetch('http://127.0.0.1:8080/motos/ACTUALIZAR/' + id_moto, {
+    const resp = await fetch('../motos/ACTUALIZAR/' + id_moto, {
         method: "PUT",
         body: datos_form,
     })
